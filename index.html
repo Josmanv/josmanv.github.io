@@ -2,87 +2,555 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Página personal de Jose Manuel López Cuenca | Desarrollador Full Stack</title>
+	<title>Mi portafolio - proyecto final</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
 </head>
-<body>
+<body id="page-top">
 
+<!-- Navegación -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- icono mostrado en modo móvil-->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Jose Manuel López Cuenca</a>
+            </div>
 
-<!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-
-
-      <div class="container">
-
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-
-
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-           <a class="navbar-brand" href="index.html"><img class="img-rounded" id="mini-foto" alt="Yo" src="img/Jose.jpg"></a>
-          <a class="navbar-brand" href="index.html"><p id="mi-nombre">Jose Manuel López</p></a>
-
-
-
+            <!-- Contenido del navbar -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="portafolio.php"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Conocimientos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Acerca de</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="navbar-collapse collapse">
+        <!-- /.container-fluid -->
+    </nav>
 
 
-          <!-- <ul class="nav navbar-nav">
-            <li><a href="#about">Sobre mi</a></li>
-            <li><a href="#contact">Contacto</a></li>
-            <li><a href="#">Curriculum</a></li>
-          </ul> -->
+    <!-- Cabecera -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Bienvenido a mi sitio personal</div>
+                <div class="intro-heading">Soy Jose Manuel López</div>
+                <a href="#about" class="page-scroll btn btn-xl">Saber más de mi</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Sección servicios -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Conocimientos adquiridos</h2>
+                    <h3 class="section-subheading text-muted">Aquí puedes hacerte una idea de los conocimientos que tengo actualmente (2017)</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-html5 fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                    <h4 class="service-heading">HTML5</h4>
+                    <p class="text-muted">Del lado del Front End, como es lógico, hay que conocer este fantástico lenguaje de marcas para maquetar como es 
+                    debido, una buena página web. </p>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-css3 fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                    <h4 class="service-heading">CSS3</h4>
+                    <p class="text-muted">Tampoco puede faltar, conocer la tecnología <i>Css3</i> para dar estilos a nuesros diseños.</p>
+                </div>
+
+                 <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-bold fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                    <h4 class="service-heading">Bootstrap</h4>
+                    <p class="text-muted">Utilizar este famoso framework de twiter, ayuda y agiliza en el desarrollo de páginas web responsive y bien estructuradas</p>
+                </div>
+
+            </div>
+
+             <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-git fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                    <h4 class="service-heading">Git</h4>
+                    <p class="text-muted">Git, un fantástico software de control de versiones que nos ayuda con nuestra forma de trabajar.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa-stack-1x fa-inverse" aria-hidden="true">JS</i>
+                    </span>
+                    <h4 class="service-heading">JavaScript</h4>
+                    <p class="text-muted">Es indispensable conocer <i>javascript</i> hoy en día, ya que este lenguaje de programación ha avanzado de manera considerable, apareciendo gran número de librerías y frameworks basados en él</p>
+                </div>
+
+                 <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa-stack-1x fa-inverse" aria-hidden="true">JQ</i>
+                    </span>
+                    <h4 class="service-heading">JQuery</h4>
+                    <p class="text-muted">La librería de Javacript más utilizada por los programadores y que te hará la vida más fácil</p>
+                </div>
+                
+            </div>
 
 
-          <ul class="nav navbar-nav navbar-right">
+             <div class="row text-center">
+                 <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa-stack-1x fa-inverse" aria-hidden="true">Php</i>
+                    </span>
+                    <h4 class="service-heading">Php</h4>
+                    <p class="text-muted">Utilizo php como lenguaje de servidor, para las mconexiones con las bases de datos</p>
+                </div>
 
-          	 <li class="active"><a href="#">Portfolio</a></li>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-database fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                    <h4 class="service-heading">Mysql</h4>
+                    <p class="text-muted">Junto a php, uso Mysql como base de datos. Este modelo de base de datos relacional es de los más extendidos que existen
+                    gracias a la gran cantidad de documentación que hay en la red</p>
+                </div>
 
-          	<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sobre mi<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <!-- <li><a href="#">Curriculum</a></li> -->
-                <li><a href="intereses.html">Intereses</a></li>
-                <li><a href="tecnologias.html">Tecnologías</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Datos de interés</li>
-                <li><a href="curriculum.html">Mi Curriculum online</a></li>
-                <!-- <li><a href="#">One more separated link</a></li> -->
-              </ul>
-            </li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <!-- <li class="active"><a href="http://getbootstrap.com/examples/navbar-static-top/">Static top</a></li> -->
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-desktop fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    </span>
+                    <h4 class="service-heading">Photoshop</h4>
+                    <p class="text-muted">Para el manejo de imágenes y diseño de cartelería / diseño web, Photshop.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección portafolio-->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Estos son algunos de mis proyectos.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio_jm/acmi.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>CMS Wprdpress</h4>
+                        <p class="text-muted">Creación web con Wordpress</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio_jm/diamante.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Maquetación con Bootstrap</h4>
+                        <p class="text-muted">Diseño web</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio_jm/portfolio.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Bootstrap y Github</h4>
+                        <p class="text-muted">Diseño y maquetación</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio_jm/hostal.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Diseño a medida</h4>
+                        <p class="text-muted">Maquetación y programación</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio_jm/hotel.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Diseño a medida</h4>
+                        <p class="text-muted">Maquetación y programación</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección acerca de mi -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   <h2 class="section-heading">Acerca de mi</h2>
+                    <h3 class="section-subheading text-muted">Afán por no dejar nunca de aprender</h3>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="team-member">
+                        <img src="img/yo/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Jose Manuel López</h4>
+                        <p class="text-muted">Desarrollador web Full Stack</p>
+                        
+                </div>
+
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>
+                    Trabajo como programador, encargándome tanto de la parte del servidor (BackEnd) como de la parte del cliente (FronEnd), o lo que es lo mismo, soy programador FullStack! <br>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <p>
+                    Soy un apasionado de la web 2.0 y estoy continuamente aprendiendo sobre nuevos lenguajes de programación y nuevos Frameworks.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección logos de clientes -->
+   <!--  <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside> -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contacto</h2>
+                    <h3 class="section-subheading text-muted">Puedes contactar conmigo mediante el formulario o las redes sociales</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form action="mailto:josem_lc@hotmail.com">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Tu nombre *" id="name" required>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Tu Email *" id="email" required>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Tu Teléfono *" id="phone" required>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Tu Mensaje *" id="message" required></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Pie de página-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">&copy; Portfolio de Jose Manuel López Cuenca 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/Josmanv2" target="_blanck"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <!-- <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li> -->
+                        <li><a href="https://www.linkedin.com/in/jose-manuel-l%C3%B3pez-cuenca-a25a474a/" target="_blanck"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Politicas de privacidad</a>
+                        </li>
+                        <li><a href="#">Terminos de uso</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </footer>
 
 
-            <!-- <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/">Fixed top</a></li> -->
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+    <!-- Portafolio Modals -->
+    
+
+    <!-- Portafolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Detalles del proyecto-->
+                            <h2>movimientoacmi.com</h2>
+                            <p class="item-intro text-muted">Creación de paginas web con Wordpress</p>
+                            <img class="img-responsive" src="img/portfolio_jm/acmi2.png" alt="">
+                            <p>Instalación del CMS Wordpress, utilizando una plantilla para la Asociación Cultural de Músicos Independientes de Villamalea</p>
+                            <p>
+                                <strong>Puedes echarle un vistazo </strong>en el smiguiente enlace <a href="http://www.movimientoacmi.com" target="_blank">movimientoacmi.com</a>
+                            </p>
+                            <ul class="list-inline">
+                                <li>Fecha: Septiembre de 2016</li>
+                                <li>Cliente: ACMI</li>
+                                <li>Categoria: Wordpress</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <h1 style="text-align: center;">Probando con Git y GitHub</h1>
-	<h2 style="text-align: center;">En Desarrollo...</h2>
-	 
-	<br><br><br>
-	<div style="text-align:center; vertical-align: middle;">
-	<i class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i>
-	<span class="sr-only">Saving. Hang tight!</span>
-	</div>
+    <!-- Poratfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>saladiamante.com</h2>
+                            <p class="item-intro text-muted">Diseño y maquetación responsive utilizando el framwork "Bootstrap" de Twitter</p>
+                            <img class="img-responsive img-centered" src="img/portfolio_jm/diamante2.png" alt="">
+                            <p><strong>Saladiamante.com</strong> es un sitio web realizado con bootstarap.<br>
+                            Este excelente framework de Twitter, simplifica mucho las cosas a la hora de hacer diseños responsive.
+                            </p>
+                            <p>Puedes ver la web en funcionamiento en el siguiente enlace <a href="http://www.saladiamante.com" target="_blank">Saladiamanete.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portafolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Detalles del proyecto -->
+                            <h2>Portfolio Personal</h2>
+                            <p class="item-intro text-muted">Realización de mi portfolio personal utilizando Bootstrap</p>
+                            <img class="img-responsive img-centered" src="img/portfolio_jm/portfolio.png" alt="Portfolio Jose Manuel López">
+                            <p>Este es mi porfolio personal, en el que nos encontramos ahora <a href="#page-top" target="_blank">Mi Portfolio</a>. El cual, 
+                            se encuentra en funcionamiento desde github, una plataforma de control de versiones que nos hace la vida más fácil a los progrmadores.
+
+                            </p>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Portafolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Detalles del proyecto -->
+                            <h2>Hostal el Júcar</h2>
+                            <p class="item-intro text-muted">Mantenimiento, programación y mejoras</p>
+                            <img class="img-responsive img-centered" src="img/portfolio_jm/hostal2.png" alt="">
+                            <p>El <a href="http://www.hostaleljucar.es" target="_blank">Hostal el Júcar</a> es una de las páginas web de las que llevo el mantenimiento, en la cual he añadido muchas mejoras, tanto de diseño-maquetación, como de programación.<br>
+
+                            </p>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- Portafolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Detalles del proyecto -->
+                            <h2>Hotel Pelayo en Alcalá del Júcar</h2>
+                            <p class="item-intro text-muted">Mantenimiento, programación y mejoras</p>
+                            <img class="img-responsive img-centered" src="img/portfolio_jm/hotel2.png" alt="">
+                            <p>El <a href="http://www.hotelpelayo.net" target="_blank">Hotel Pelayo</a> es una de las páginas web de las que llevo el mantenimiento, en la cual he añadido muchas mejoras, tanto de diseño-maquetación, como de programación.<br>
+
+                            </p>
+                            
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-	<script src="js/jquery-3.2.1.min.js"/></script>
-	<script src="bootstrap/js/bootstrap.js"/></script>
+    
+	
+
+	
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
 </body>
 </html>
