@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Mi portfolio - Jose Manuel López Cuenca</title>
+	<title>Mi Guía para github - Jose Manuel López Cuenca</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
@@ -12,7 +12,7 @@
 <body id="page-top">
 
 <!-- Navegación -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-shrink navbar-fixed-top">
         <div class="container">
             <!-- icono mostrado en modo móvil-->
             <div class="navbar-header page-scroll">
@@ -32,18 +32,12 @@
                         <a href="portafolio.php"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Conocimientos</a>
+                        <a class="page-scroll" href="index.html">Mi Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#">Guía Git</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Acerca de mi</a>
-                    </li>
-                    
-                    <li>
-                        <a class="page-scroll" href="#contact">Contacto</a>
-                    </li>
+             
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -53,26 +47,31 @@
 
 
     <!-- Cabecera -->
-    <header>
+    <div class="myHeader">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Bienvenido a mi sitio personal</div>
-                <div class="intro-heading">Soy Jose Manuel López</div>
-                <a href="#about" class="page-scroll btn btn-xl">Saber más de mi</a>
+                <div class="intro-lead-in"></div>
+                <!-- <div class="intro-heading">Por Jose Manuel López</div> -->
             </div>
         </div>
-    </header>
+    </div> 
     
     <!-- Sección servicios -->
-    <section id="services">
+    <section id="services" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Conocimientos adquiridos</h2>
-                    <h3 class="section-subheading text-muted">Aquí puedes hacerte una idea de los conocimientos que tengo actualmente (2017)</h3>
+                    <h2 class="section-heading chelsea">Guía de Git y GitHub</h2>
+                    <h3 class="chelsea">Primeros pasos <span class="texto-rojo">=> INSTALACIÓN </span></h3>
                 </div>
             </div>
+
             <div class="row text-center">
+            	<div class="col-md-12 top-20">
+            		<a href="https://git-scm.com/" target="_blanck"><img class="sistemasOperativos" src="img/guia_git/sistemasOperativos.png"></a>
+            	</div>
+            </div>
+            <!-- <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -163,20 +162,20 @@
                     <p class="text-muted">Para el manejo de imágenes y diseño de cartelería / diseño web, Photshop.</p>
                 </div>
                 
-            </div>
+            </div> -->
         </div>
     </section>
 
-    <!-- Sección portafolio-->
-    <section id="portfolio" class="bg-light-gray">
+    <!-- Sección portfolio-->
+    <section class="bg-brown-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Estos son algunos de mis proyectos.</h3>
+                    <h2 class="section-heading chelsea">Título</h2>
+                    <h3 class="text-muted chelsea">Aquí va el subtítulo</h3>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -265,23 +264,23 @@
                     </div>
                 </div>
                
-            </div>
+            </div> -->
         </div>
     </section>
     
     <!-- Sección acerca de mi -->
-    <section class="success" id="about">
+    <section class="success bg-natillas" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                   <h2 class="section-heading">Acerca de mi</h2>
-                    <h3 class="section-subheading text-muted">Disfruto aprendiendo nuevas tecnologías y métodos para la web</h3>
+                   <h2 class="section-heading chelsea">Título</h2>
+                    <h3 class="chelsea text-muted">Subtitulos aquí</h3>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
 
                 <div class="team-member">
-                        <img src="img/yo/josemanuel_lopez_cuenca.jpg" class="img-responsive img-circle" alt="Jose Manuel López Cuenca" title="Jose Manuel López Cuenca">
+                        <img src="img/yo/2.jpg" class="img-responsive img-circle" alt="">
                         <h4>Jose Manuel López</h4>
                         <p class="text-muted">Desarrollador web Full Stack</p>
                         
@@ -343,7 +342,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!--Pie de página-->
@@ -570,7 +569,6 @@
 
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    
 </body>
 </html>

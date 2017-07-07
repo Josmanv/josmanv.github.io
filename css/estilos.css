@@ -3,6 +3,16 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+@font-face {
+font-family: ChelseaMarket;
+src: url('../fonts/ChelseaMarket-Regular.ttf');
+}
+
+.chelsea {
+   font-family: "ChelseaMarket","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
 .text-muted {
     color: #777;
 }
@@ -60,6 +70,18 @@ h6 {
 
 .bg-darkest-gray {
     background-color: #222;
+}
+
+.bg-brown-gray {
+    background-color: #B3B086;
+}
+
+.bg-natillas {
+    background-color: #F5ED89;
+}
+
+.texto-rojo{
+    color: #EC3C14;
 }
 
 .btn-primary {
@@ -252,6 +274,67 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+.myHeader {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/guia_git/git-github-logo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 75%;
+    -moz-background-size: 75%;
+    background-size: 75%;
+    -o-background-size: 75%;
+    margin-top: 50px;
+}
+
+.myHeader .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.myHeader .intro-text .intro-lead-in {
+    /*margin-bottom: 25px;*/
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+.myHeader .intro-text .intro-heading {
+    /*margin-bottom: 25px;*/
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+
+    .myHeader .intro-text {
+        padding-top: 400px;
+    }
+
+    .myHeader .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    .myHeader .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+
 header {
     text-align: center;
     color: #fff;
@@ -312,7 +395,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 section h2.section-heading {
@@ -332,7 +415,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 50px 0;
     }
 }
 
@@ -590,4 +673,16 @@ ul.social-buttons li a:active {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.top-20{
+    margin-top: 20px;
+}
+
+.sistemasOperativos{
+    opacity: 0.8;
+}
+
+.sistemasOperativos:hover{
+    opacity:1;
 }
