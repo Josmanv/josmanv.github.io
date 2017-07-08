@@ -76,6 +76,19 @@ h6 {
     background-color: #f7f7f7;
 }
 
+.bg-light-gray-formateado {
+    background-color: #f7f7f7;
+    color: #222;
+    padding: 10px;
+    /*border-radius: 25px;*/
+}
+
+@media (max-width:768px){
+    .bg-light-gray-formateado{
+        border-radius: 0px;
+    }
+}
+
 .bg-darkest-gray {
     background-color: #222;
 }

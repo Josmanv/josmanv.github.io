@@ -38,6 +38,7 @@
                         <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#">Guía<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#instalacion">Instalación</a></li>
+                            <li><a href="#configuracion">Configuración</a></li>
                         </ul>
                     </li>
              
@@ -53,7 +54,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Guía de <span class="letras-movimiento">Git y GitHub</span></h2>
+                    <h1 class="section-heading">Guía de <span class="letras-movimiento">Git y GitHub</span></h1>
                     <h3>Primeros pasos <span class="texto-rojo">=> INSTALACIÓN </span></h3>
                     <p>En primer lugar, deberemos instalar Git en nuestro ordenador. En el siguiente enlace podemos descargar git para el sistema operativo que deseemos</p>
                 </div>
@@ -68,22 +69,40 @@
                     </a>
             	</div>
             </div>
+
+    </section>
+    
+    <section id="configuracion" class="bg-light-gray">
+
+            <div class="row text-center">
+            <h3>Primeros pasos <span class="texto-rojo">=> CONFIGURACIÓN </span></h3>
+                <div class="col-md-12 top-20">
+                    <p>Una vez instalado, abriremos la consola <i>( Git Bash en Windows )</i> para realizar las primeras configuraciones</p>
+                </div>
+                <div class="col-lg-12">
+                    <p>En primer lugar, comprobaremos que todo ha ido bien introduciendo el siguiente comando<p>
+                    <kbd>git --version</kbd>
+                    <p>El cual nos debe de dar la versión de git que tenemos instalada, claro!</p>
+                
+                    <p>A continuación configuramos nuestro nombre</p>
+                    <kbd>git config --global user.name "miNombre"</kbd>
+                    <br><br><p>Este mismo comando nos sirve también para actualizar el nombre<br><br>
+                    para ver esta configuración, usaremos el mismo comando pero sin el nombre</p>
+                    <kbd>git config --global user.name</kbd>
+                    <br><br><p>Configuramos nuestro correo</p>
+                    <kbd>git config --global user.email "miCorreo@Gmail.com"</kbd>
+                    <br><br><p>Para verlo utilizamos el siguiente comando</p>
+                    <kbd>git config --global user.email</kbd>
+                    <br><br><p>También podemos configuarar los colores de la consola</p>
+                    <kbd>git config --global color.ui true</kbd>
+                     <br><br><p>Por último, para poder ver toda la configuración añadiremos los siguiente</p>
+                    <kbd>git config --global --list</kbd>
+                </div>
+                
+            </div>            
             
         </div>
     </section>
-
-    <section id="enObras" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <i class="fa fa-exclamation-triangle fa-5x text-primary" aria-hidden="true" title="En Obras" alt="En Obras"></i>
-                    <p>Está guía la voy a ir completando poco a poco, aún no está terminada, disculpar las molestias...</p>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
     
     <!-- <section class="bg-brown-gray">
         <div class="container">
@@ -109,6 +128,18 @@
             
         </div>
     </section> -->
+
+    <section id="enObras" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <i class="fa fa-exclamation-triangle fa-5x text-primary" aria-hidden="true" title="En Obras" alt="En Obras"></i>
+                    <p>Está guía la voy a ir completando poco a poco, aún no está terminada, disculpar las molestias...</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
     
     <footer>
         <div class="container">
