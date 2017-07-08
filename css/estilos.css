@@ -84,6 +84,22 @@ h6 {
     color: #EC3C14;
 }
 
+.text-white {
+  color: #fff;
+}
+
+.icon-white{
+    color: #fff;
+}
+
+.icon-white:hover{
+    color: #76B900;
+}
+
+a.icon-white:link{
+    text-decoration: none;
+}
+
 .btn-primary {
     border-color: #5D9200;
     text-transform: uppercase;
@@ -222,7 +238,7 @@ fieldset[disabled] .btn-xl.active {
     /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: primary;
 }
 
 .navbar-default .nav li a:hover,
