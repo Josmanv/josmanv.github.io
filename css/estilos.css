@@ -83,6 +83,11 @@ h6 {
     /*border-radius: 25px;*/
 }
 
+.bg-darkest-gray-formateado {
+    background-color: #222;
+    color: #76B900;
+}
+
 @media (max-width:768px){
     .bg-light-gray-formateado{
         border-radius: 0px;
