@@ -106,12 +106,20 @@ h6 {
     background-color: #fff;
 }
 
+.bg-green {
+    background-color: #76B900;
+}
+
 .texto-rojo{
     color: #EC3C14;
 }
 
 .text-white {
   color: #fff;
+}
+
+.text-green {
+  color: #76B900;
 }
 
 .icon-white{
