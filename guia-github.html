@@ -39,6 +39,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="#instalacion">Instalación</a></li>
                             <li><a href="#configuracion">Configuración</a></li>
+                            <li><a href="#iniciando">Iniciando</a></li>
                         </ul>
                     </li>
              
@@ -73,13 +74,12 @@
     </section>
     
     <section id="configuracion" class="bg-light-gray">
-
+        <div class="container">
             <div class="row text-center">
             <h3>Primeros pasos <span class="texto-rojo">=> CONFIGURACIÓN </span></h3>
                 <div class="col-md-12 top-20">
                     <p>Una vez instalado, abriremos la consola <i>( Git Bash en Windows )</i> para realizar las primeras configuraciones</p>
-                </div>
-                <div class="col-lg-12">
+                
                     <p>En primer lugar, comprobaremos que todo ha ido bien introduciendo el siguiente comando<p>
                     <kbd>git --version</kbd>
                     <p>El cual nos debe de dar la versión de git que tenemos instalada, claro!</p>
@@ -99,23 +99,35 @@
                     <kbd>git config --global --list</kbd>
                 </div>
                 
-            </div>            
-            
-        </div>
+            </div>   
+        </div>         
     </section>
     
-    <!-- <section class="bg-brown-gray">
+   <section id="iniciando" class="bg-darkest-gray text-white">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading chelsea">Título</h2>
-                    <h3 class="text-muted chelsea">Aquí va el subtítulo</h3>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-     -->
+           <div class="row text-center">
+                <h3>Iniciando un nuevo Proyecto <span class="texto-rojo">=> INICIANDO </span></h3>
+                    <div class="col-md-12 top-20">
+                        <p>El siguiente comando marca el inicio de nuestro proyecto, aquí le decimos a Git que empiece a monitorear todos nuestros cambios, para ello debemos posicionarnos desde la consola en la carpeta del proyecto que queremos monitorear</p>
+                        <kbd>git init</kbd>
+                        <br><br><p>Para conocer el estado de nuesro proyecto</p>
+                        <kbd>git status</kbd>
+                        <br><br><p>Añadir un archivo concreto</p>
+                        <kbd>git add archivo.html</kbd>
+                        <br><br><p>Añadir todo</p>
+                        <kbd>git add -A</kbd>
+                        <br><br><p>Guardar cambios con un mensaje</p>
+                        <kbd>git commit -m "mensaje"</kbd>
+                        <br><br><p>Listado de commits</p>
+                        <kbd>git log</kbd>
+                        <br><br><p>Viajar a traves de nuestros commits o de nuestras ramas<br>
+                        En el siguiente ejemplo viajamos a una versión anterior de nuestro proyecto mediante el identificador del commit que obtenemos de <i>"git log"</i></p>
+                        <kbd>git checkout f788eash48d5enc62d157ell5sc6h31e5f7v6sc5</kbd>
+                    </div>
+                    
+            </div>     
+         </div>       
+   </section>
     
     <!-- <section class="success bg-natillas" id="about">
         <div class="container">
@@ -134,7 +146,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <i class="fa fa-exclamation-triangle fa-5x text-primary" aria-hidden="true" title="En Obras" alt="En Obras"></i>
-                    <p>Está guía la voy a ir completando poco a poco, aún no está terminada, disculpar las molestias...</p>
+                    <p>Está guía pretende ser una <b>guía rápida</b> para tenerla a mano en el día a día y encontrar así el comando que busco de forma fácil.<br>
+                     La voy a ir completando poco a poco, aún no está terminada, disculpad las molestias...</p>
                 </div>
             </div>
         </div>
